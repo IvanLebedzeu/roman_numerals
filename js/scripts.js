@@ -10,7 +10,7 @@ var numeric  = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
 var numRoman =  "";
 
 function convertToRoman(number) {
-  if (number <= 0 || (number.toString().match(letters))) {
+  if (number <= 0 && number > 3999|| (number.toString().match(letters))) {
     alert("Please enter a correct number!");
   }
   for (var index = 0; index < numeric.length; index++) {
